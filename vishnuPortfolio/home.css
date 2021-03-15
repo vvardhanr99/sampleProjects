@@ -1,0 +1,243 @@
+*{
+    margin: 0;  
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #main{
+      position:relative;
+  }
+  ul{
+      list-style: none;
+      display: flex;
+  }
+  nav{
+      background-color: gray;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      text-transform: uppercase;
+  }
+  li{
+      padding: 20px;
+  }
+  li a{
+      text-decoration: none;
+      color: #fff;
+  }
+  li:last-child{
+      margin-right: 190px;
+  }
+  li:hover{
+      background-color: tomato;
+  }
+  nav>.logo{
+      font-size: 170%;
+      margin:10px 0 10px 20px;
+      font-weight: bolder;
+      text-decoration: none;
+      color: #fff;
+  }
+  .active{
+      background-color: tomato;
+  }
+  .left{
+      background-color: lightsalmon;
+      margin-top: 59px;
+      width:20%;
+      top:59px;
+      float: left;
+      height: 92.3vh;
+      z-index: -1;
+  }
+  .social{
+     position: relative;
+     top:30%; 
+  }
+  .social a{
+      text-decoration: none;
+  }
+  #icon1{
+      display:block;
+      margin-left: 90px;
+      padding:20px;
+  }
+  #icon1:hover{
+      color:#fff;
+      transition: 2s;
+  }
+  .name{
+      position: relative;
+      top:59px;
+      left:20%;
+      width: 80%;
+      height:92.3vh;
+      background: linear-gradient(rgba(200,150,150,.4),rgba(150,75,75,.3)),url(background.jpg) no-repeat;
+      background-size: cover;
+      z-index: -1;
+  }
+  .name h1{
+      text-align: center;
+      font-size: 40px;
+      color:#fff;
+      text-transform: uppercase;
+  }
+  .inner{
+      position:absolute;
+      top:40%
+  }
+  .inner h2{
+      font-size: 30px;
+      margin:20px;
+      color:lightblue;
+  }
+  .inner p{
+      font-size: 20px;
+      margin:20px;
+      color:lightseagreen;
+  }
+  .download{
+      margin:20px;
+      border:1px solid transparent;
+      border-radius: 6px;
+      background-color:#111;
+      padding: 15px;
+      cursor: pointer;
+      color:#fff;
+      text-decoration: none;
+  }
+  .download:hover{
+      background-color: tomato;
+  }
+  /*      About     */
+  #about{
+      position: relative;
+      height:100vh; 
+      z-index: -1;
+      background-color:rgba(1,1,1,.7);
+  }
+  .about1{
+      position: relative;
+      top:100px;   
+      float: left;
+      width: 100%;
+      margin-left: 20px;
+  }
+  .about1 h1{
+      font-size:60px;   
+  }
+  .about1 h2{
+      font-size:30px;
+      color:#fff;
+  }
+  .about1 p{
+      color: #fff;
+      margin-top: 40px;
+      font-size: 25px;
+  }
+  #btn{
+      padding:10px;
+      margin:20px;
+      background-color:#17d1ac;
+      border-style: hidden;
+      outline: white;
+  }
+.img{
+      border: 1px solid transparent;
+      float:right;
+      width: 50%;
+      height:550px;
+}
+.image{
+    width:400px;
+    margin:-250px 40px 0 0;
+    float: right;
+    height: 500px;
+}
+  /*  Education  */
+  #education{
+      position: relative;
+      background-color: teal;
+      height: 100vh;
+      z-index: -1;
+  }
+  #education>h1{
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 6px;
+  }
+  .image1,.image2,.image3{
+      position: relative;
+      top:40px;
+      left:30px;
+      right: 20px;
+      float:left;
+      margin: 40px;
+      width:350px;
+      height:400px;
+  }
+  .image1{
+      background: url(image1.png);
+  }
+  .image2{
+      background: url(image2.jpeg);
+  }
+  .image3{
+      background:url(image3.jfif) no-repeat;
+      background-size: cover;
+      float: left;
+  }
+  .one,.two,.three{
+      width:350px;
+      height: 310px;
+      background-color: rgba(34, 94, 184, 0.76);
+      text-align: center;
+      color: #fff;
+      padding-top:90px
+  }
+  /* contact Detils */
+  #contact{
+      background-color:lightgray;
+      height: 100vh;
+      z-index: -1;
+  }
+  form{
+      position:relative;
+      top:160px;
+  }
+  #user,#email{
+      padding:10px;
+      margin:10px 0 10px 30px;
+      width:450px;
+      border:none;
+      background-color: transparent;
+      border-bottom:1px solid rgb(179, 16, 16);
+      color:#111;
+      outline: none;
+  }
+  label{
+      position: relative;
+      margin: 40px 0 10px 30px;
+  }
+  #textarea{
+      border:none;
+      margin: 10px 0 10px 90px;
+      background-color: #fff;
+      outline: none;
+  }
+  button[type=submit]{
+      margin:30px 0 0 30px;
+      padding:8px;
+      width:500px;
+      background-color: blue;
+      color:#fff;
+  }
+  button:hover{
+      background-color: lightblue;
+      cursor:pointer;
+      color: black;
+  }
+  
+  
+  
+  

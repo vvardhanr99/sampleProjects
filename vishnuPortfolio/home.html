@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Portfolio | Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--icon-->
+        <link rel="shortcut icon" href="icon1.png" type="image/x-icon">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="main">
+            <nav>
+                <!--Logo In Page-->
+                <a href="#" class="logo">Vishnu</a>
+                <!--navogations-->
+                <ul class="menu">
+                    <li class="active"><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!--left-->
+            <div class="left">
+                <div class="social">
+                    <a href="https://www.facebook.com/vishnuyuvi98/"><i id="icon1" class="fab fa-facebook   " style="font-size : 42px;"></i></a>
+                    <a href="https://twitter.com/vishnuyuvi98"><i id="icon1" class="fab fa-twitter" style="font-size : 42px;"></i></a>
+                    <a href="https://www.instagram.com/vishnuyuvi98"><i id="icon1" class="fab fa-instagram" style="font-size : 42px;"></i></a>
+                    <a href="https://github.com/vvardhanr99"><i id="icon1" class="fab fa-github" style="font-size: 42px;"></i></a>
+                </div>
+            </div>
+            <!--menu div-->
+            <div class="name"> 
+                <h1>Welcome to my Portfolio</h1>
+                <div class="inner">
+                    <h2>I'M <br> Vishnu Vardhan Reddy</h2>
+                    <p>Basically my passion is to create Front-End Websites, which follow industry <br>
+                        standard for more carrier related info 
+                        <br> please check my Cv .</p>
+                </div> 
+            </div>   
+            <div>
+                <a href="Vishnu2021.pdf" download="Resume" class="download">Download Cv</a>
+            </div>      
+        </div>
+        <!---div On About Details-->
+        <div id="about">
+            <div class="about1">
+                <h1 style="color:#17d1ac ;">About Me </h1> <br>
+                <h2>Front End Developer!</h2>
+                <p>Creative and self-starting Front-End Developer building stable eCommerce websites <br> and apps in fast-paced, collaborative environments.<br>
+                Highly skilled in HTML/CSS/JavaScript/JQuery .</p>
+                <p id="show" style="display: none;">A recent Graduate from GITAM Bengaluru with aggrigate of 6.71 CGPA <br>
+                in Computer Scienece Stream </p> 
+                <div id="more">
+                <button id="btn"> Click Here For More</button>
+                </div>  
+                <div class="img">
+                    <img src="vishnu.jpg" class="image" alt="" >
+                </div>    
+            </div>   
+        </div>
+        <!---div On Education Detils-->
+        <div id="education">
+            <h1>Education</h1>
+           <div class="image1">
+                <div class="one">
+                    <h1>10th SSC</h1>
+                    <h2>School : Loyola High School</h2>
+                    <h2>Board : Andhra Pradesh State</h2>
+                    <h3>CGPA : 8.7</h3>
+                    <h3>2014</h3>
+                </div>
+           </div>
+           <div class="image2">
+                <div class="two">
+                    <h1>Intermediate</h1>
+                    <h2>College : Sri Sadhana Junior College</h2>
+                    <h2>Board : Andhra Pradesh State</h2>
+                    <h3>Percentage : 89.2</h3>
+                    <h3>2016</h3>
+                </div>
+            </div> 
+           <div class="image3">
+                <div class="three">
+                    <h1>Batcheolar's Degree</h1>
+                    <h2>College : GITAM </h2>
+                    <h2>Stream : Computer Science</h2>
+                    <h3>CGPA : 6.71</h3>
+                    <h3>2020</h3>
+                </div>
+           </div>
+        </div>
+        <!--Contact Details-->
+        <div id="contact">
+            <form action="https://www.vishnuyuvi/contct.com" method="get">
+                <input type="text" name="name" id="user" placeholder="Your Name:"><br>
+                <input type="email" name="email" id="email" placeholder="Your E-mail:"><br>
+                <label for="textarea">Message : </label><br>
+                <textarea name="message" id="textarea" cols="50" rows="8">
+                </textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>
