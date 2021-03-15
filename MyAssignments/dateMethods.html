@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Date Methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var months = ["Jan", "Feb", "March", "April", "May" ];
+            var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+            var d = new Date();
+            var dateFormat = "";
+            var monthIndex = d.getMonth();
+            var dayIndex = d.getDay();
+            dateFormat = d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear();
+            console.log("1. " + dateFormat);
+            var secondFormat = days[dayIndex] + "," + d.getDay() + "th " + months[monthIndex] + " " + d.getFullYear();
+            console.log("2. " + secondFormat);
+            var thirdFormat = days[dayIndex] + " " + d.getDay() + "/" + months[monthIndex] + "/" + d.getFullYear();
+            console.log("3. " + thirdFormat);
+            var fourthFormat = months[monthIndex] + " " + d.getDay() + "th " + d.getFullYear();
+            console.log("4. " + fourthFormat);
+            var fifthFormat = months[monthIndex] + "/" + d.getDay() + "/" + d.getFullYear();
+            console.log("5. " + fifthFormat)
+            var sixthFormat = d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear() +" "+ d.getMinutes() +" Min " + d.getSeconds() +" Sec" ;
+            console.log("6. " + sixthFormat);
+            var seventhFormat = months[monthIndex] + ", " + d.getDay() + "th " + d.getHours() + ":" +d.getMinutes() + ":" + d.getSeconds();
+            console.log("7. " + seventhFormat);
+            var eighthFormat = d.getDay() + "th " + months[monthIndex]+ " " + d.getMinutes() + " Min " + ":" + d.getSeconds() + " Sec";
+            console.log("8. " + eighthFormat);
+        </script>
+    </body>
+</html>

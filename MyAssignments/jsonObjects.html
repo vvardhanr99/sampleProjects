@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Working On JSON Objects</title>
+	</head>
+	<style>
+		.card{
+			font-family: sans-serif;
+			border: 1px solid #f2f2f2;
+			width: 20%;
+			height: 15%;
+			padding: 20px;
+			position: absolute;
+			left: 40%;
+			top:40%;
+			background-color: goldenrod;
+			color: #fff;
+		}
+	</style>
+	<body>
+		<h2 style="text-align: center; color: cornflowerblue;">JSON Objects</h2>
+		<div class="card">
+			<h4>Click <br> Control+shift+J</h4>
+		</div>
+		<script>
+			var employeeDetalis = {
+				"name" : {
+					"firstName" : "Sameyul",
+					"lastName" : "Yesupadam"
+				},
+				"age" : 26 ,
+				"phone" : ["1234567890" , "9876543210"] ,
+				"e-mail" : {
+					"office" : "sameyuly@xyz.com" ,
+					"personal" : "smeylyesu@gmail.com"
+				},
+				"companyName" : "xyzIndustries" ,
+				"address" : {
+					"office" : {
+						"buildingNumber" : "99/8" ,
+						"location" : "Hyderabad" ,
+						"pin" : "500082",
+					},
+					"personal" : {
+						"state" : "Telangana" ,
+						"country" : "India" ,
+						"dNo" : "3-4-99 , 1st Main" 
+					},
+				},
+				"birthDay" : {
+					"month" : "May" ,
+					"day" : 24 ,
+					"year" : 1993
+				},
+				"status" : "Married" ,
+				"workinStatus" : true ,
+				"ringtone" : "Senorita" ,
+				"picture" : ":man:" ,
+				"group" : "O+ve" ,
+				"socialID" : {
+					"linkedIn" : "www.linkedin.com/sameylyesu" ,
+					"facebokkID" : "www.facebook.com/sameylyesu" ,
+					"twitterId" : "www.twitter.com/sameylyesu"
+				},
+			};
+			console.log(Object.keys(employeeDetalis));
+			console.log(employeeDetalis);
+			/*
+			for (var temp in employeeDetalis)
+			{
+				console.log(employeeDetalis[temp])
+			} */
+		</script>
+	</body>
+</html>

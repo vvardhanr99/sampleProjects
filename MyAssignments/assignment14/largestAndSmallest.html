@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Largest And Smallest NUmbers in an array
+        </title>
+    </head>
+    <body>
+        <script>
+            var data=[];
+            for (var i = 0;i < 5;i++){
+                data[i] = parseInt(prompt("Enter tha array elements:" + i));
+                var lno = data[0];
+                var sno = data[0];
+                if(lno < data[i]){
+                    lno = data[i];
+                }
+                if(sno > data[i]){
+                    sno = data[i];
+                } 
+            } console.log("Largest Number in an Array is:" + lno);
+                console.log("Smallest Number in an Array is:" + sno);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1869/1869679.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details | Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div id="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhCLLesKW2MROGmkqFR6oAua_W3ysAWWU2g&usqp=CAU" alt="">
+    </div>
+    <h1>Student Progress report card</h1>
+    <div class="form">
+        <label for="name">Name Of The Student :</label>
+            <input type="text" name="sname" id="sname"><br>
+        <label for="class">Semester : </label>
+        <input type="number" name="sem" id="sem">
+        <label for="semyear">Semester Year :</label>
+        <input type="text" name="semyear" id="semyear">
+        <div class="line">
+            <span>Subject</span>
+            <span>Marks</span>
+        </div>
+        <div class="marks">
+            <label for="maths">Mathmatics :</label>
+            <input type="text" name="maths" id="maths">
+        </div>
+        <div class="marks">
+            <label for="english">Communicative English :</label>
+            <input type="text" name="english" id="english">
+        </div>
+        <div class="marks">
+            <label for="cp">Programming with c :</label>
+            <input type="text" name="cp" id="cp">
+        </div>
+        <div class="marks">
+            <label for="cpp">c + + :</label>
+            <input type="text" name="cpp" id="cpp">
+        </div>
+        <div class="marks">
+            <label for="java">Java :</label>
+            <input type="text" name="java" id="java">
+        </div>
+        <div class="marks">
+            <label for="flat">Fundamental Language Automata Therory :</label>
+            <input type="text" name="flat" id="flat">
+        </div>
+        <input type="button" value="Total Marks &amp; Grade" onclick="readStudentDetails()">
+         <p>Total Marks:</p><span id="tmarks"></span><br>
+         <p>Grade:</p> <span id="tgrade"></span>
+         
+        <!--<input type="button" value="Get Grade" onclick="displayGrade()">-->
+        
+    </div class="form">
+    <script src="input.js"></script>
+</body>
+</html>

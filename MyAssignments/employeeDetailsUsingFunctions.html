@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Details</title>
+	</head>
+	<body>
+		<div>
+			Employee Details USing Functions!!!
+		</div>
+		<script type="text/javascript">
+		var Ename,dept,gender,id,pf,hra,basicSalary,total,tax;
+			var dataEntry = () => {
+				Ename = prompt("Enter Employee Name:");
+				gender = prompt("Enter Gender of Employee:")
+				dept = prompt("Enter Department:");
+				id = prompt("Enter Identity of Employee:");
+				basicSalary = prompt("Enter Salary");
+				basicSalary = parseInt(basicSalary)
+			}
+			var formulae = () => {
+				pf = (12/100) * basicSalary;
+				hra = (24/100) * basicSalary;
+				total = basicSalary + pf + hra;
+			}
+			var dispaly = () => {
+				console.log("Employee Name is: " + Ename);
+				console.log("Gender: " + gender);
+				console.log("Department is: " + dept);
+				console.log("Identity Number is: " + id);
+				console.log("BasicSalary is: " + basicSalary);
+				console.log("pf is: " + pf);
+				console.log("hra is: " + hra);
+				console.log("Total Salary is: " + total);
+			}	
+			var conditionForMale = () => {
+				if( gender == "male" ){
+					if (basicSalary == 100000)
+					{
+						tax = (15/100) * basicSalary;
+						console.log("Tax paying by " + Ename + " is " + tax);
+					}
+					else if (basicSalary == 50000) 
+					{
+						tax = (10/100) * basicSalary;
+						console.log("Tax paying by " + Ename + " is " + tax);
+					}else{
+						console.log("No Tax");
+					}
+				}
+			}
+			var conditionForFemale = () => {
+				if (gender == 'female') {
+					if (basicSalary == 100000) {
+						tax = (10/100) * basicSalary;
+						console.log("Tax paying by " + Ename + " is " + tax);
+					}
+					else if (basicSalary == 50000) {
+						tax = (5/100) * basicSalary;
+						console.log("Tax paying by " + Ename + " is " + tax);
+					}else{
+						console.log("No Tax");
+					}
+				}
+			}
+			var displayDetails = () => {
+				dataEntry()
+				formulae()
+				dispaly()
+				conditionForMale()
+				conditionForFemale()
+			}
+			displayDetails()
+			
+		</script>
+	</body>
+</html>

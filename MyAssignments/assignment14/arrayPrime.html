@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Array prime
+        </title>
+    </head>
+    <body>
+        <script>
+            var num = [];
+            var sum = 0;
+            var range = parseInt(prompt("Enter the range:"))
+            for (var j = 0;j < range;j++){
+                num[j] = prompt("Enter the array Elements: " +j);
+                num[j] = parseInt(num[j]);
+            }
+                for(var i = 2;i<range;i++){
+                    if(num[i] % i == 0){
+                        console.log("Not a prime Number",num[i]);
+                    }
+                    else{
+                        console.log(num[i]);
+                    }
+                }  
+        </script>
+    </body>
+</html>

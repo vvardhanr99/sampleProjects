@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Array Palindrome
+        </title>
+    </head>
+    <body>
+        <script>
+            var num = [];
+            var sum = 0;
+            var r,temp;
+            var range = parseInt(prompt("Enter the range:"))
+            for (var j = 0;j < range;j++){
+                num[j] = prompt("Enter the array Elements: " +j);
+                num[j] = parseInt(num[j]);
+                n = num[j];
+                temp = n;
+                while(n != 0){
+                    r = n % 10;
+                    sum = sum * 10 + r;
+                    n = n / 10;
+                    n = parseInt(n);
+                }   
+                if(temp == sum){
+                    console.log("Palindrome:",sum);
+                } else{
+                    console.log("Not a Palindrome:",temp);
+                }
+            }
+           
+        </script>
+    </body>
+</html>

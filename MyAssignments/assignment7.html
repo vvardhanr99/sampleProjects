@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Input Elements</title>
+		<style type="text/css">
+			ul{
+				margin: 10px auto;
+				width: 600px;
+				padding: 40px;
+				border:2px solid;
+			}
+			li{
+				list-style: none;
+				padding: 5px;
+				margin: 10px;
+			}
+			h2{
+				text-align: center;
+				text-transform: uppercase;
+			}
+			input[type=text]{
+				border-radius: 6px;
+				outline: none;
+			}
+			input[type=Password]{
+				border-radius: 6px;
+				outline: none;
+			}
+			textarea{
+				border-radius: 6px;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Registration Form</h2>
+		<form method="get" action="https://vishnuyuvi.com/abc">
+			<ul>
+				<li>
+					User Name:<input type="text" name="Uname">
+				</li>
+				<li>
+					User Password:<input type="Password" name="Upswd">
+				</li>
+				<li>Gender:
+					<input type="radio" value="Male"  name="Gender">Male
+					<input type="radio" value="FeMale"  name="Gender">FeMale
+					<input type="radio" value="Others" name="Gender">Others
+				</li>
+				<li>Languages Known:
+					<input type="checkbox" name="Languages" value="lngEng">English
+					<input type="checkbox" name="Languages" value="langTel">Telugu
+					<input type="checkbox" name="Languages" value="langHin">Hindi
+				</li>
+				<li>
+					Country:
+					<select name="Country">
+						<option name="India">India</option>
+						<option name="USA">USA</option>
+						<option name="UK">UK</option>
+						<option name="AUS">AUS</option>
+						<option name="Japan">Japan</option>
+					</select>
+				</li>
+				<li>
+					<span>Tell about self:</span>
+					<textarea name="about" >	
+					</textarea>
+				</li>
+				<li>
+					<input type="submit" value="Submit" title="Click for Submit">
+					<input type="reset" value="Clear Data" title="Click to clear Data">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

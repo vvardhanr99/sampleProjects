@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif ;
+}
+body{
+    background:linear-gradient(rgba(155,74,84,.5),rgba(122,150,250,.6),rgba(37, 153, 221, 0.5),rgba(150,150,150,.5)),
+    url("https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3R1ZGVudHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80") no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+#image{
+    position: relative;
+    left:45%;
+    top:20px;
+}
+.form{
+    margin:8% 0 0 5%;
+}
+label{
+    margin:20px;
+    text-transform: uppercase;
+}
+#sname,#sem,#semyear{
+    margin:20px;
+    width:20%;
+    padding:5px;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid tomato;
+    color:#fff;
+    font-size: 30px;
+}
+.line{
+    background-color: #fff;
+    width:80%;
+    padding:10px;
+}
+span{
+    margin:0 20% 0 100px;
+}
+.marks{
+    margin:10px 10% 20px 30px;
+}
+#maths,#english,#cp,#cpp,#java{
+    padding:5px;
+    width:20%;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+}
+#maths{
+    margin-left:300px;
+}
+#english{
+    margin-left:200px ;
+}
+#cp{
+    margin-left:225px ;
+}
+#cpp,#java{
+    margin-left: 370px;
+}
+#flat{
+    padding:5px;
+    width:20%;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    margin-left:30px;
+}
+input[type=button]{
+    padding:5px;
+    margin:20px;
+    background-color: rgba(37, 153, 221, 0.5);
+    outline: none;
+    border-style:hidden;
+}
+input[type=button]:hover{
+    cursor: pointer;
+}
+#tmarks,#tgrade{
+    margin-top: -60px;
+    width:400px;
+    height:10px;
+    padding:20px;
+    color:blue; 
+    font-size: 35px;
+}
+p{
+    margin-top: 20px;
+}
